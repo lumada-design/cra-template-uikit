@@ -18,8 +18,8 @@ export interface LoadingProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Loading: React.FC<LoadingProps> = (props) => {
-  const classes = useStyles();
   const { t } = useTranslation("common");
+  const classes = useStyles();
   const [isLoading, setIsLoading] = useState(false);
 
   const {
